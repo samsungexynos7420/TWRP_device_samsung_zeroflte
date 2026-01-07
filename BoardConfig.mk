@@ -51,7 +51,6 @@ TW_THEME := portrait_hdpi
 RECOVERY_SDCARD_ON_DATA := true
 BOARD_HAS_NO_REAL_SDCARD := true
 TARGET_RECOVERY_PIXEL_FORMAT := "ABGR_8888"
-TARGET_USE_CUSTOM_LUN_FILE_PATH := "/sys/devices/15400000.usb/15400000.dwc3/gadget/lun%d/file"
 TW_BRIGHTNESS_PATH := "/sys/devices/13900000.dsim/backlight/panel/brightness"
 TW_MAX_BRIGHTNESS := 255
 TW_DEFAULT_BRIGHTNESS := 162
@@ -62,6 +61,7 @@ LZMA_RAMDISK_TARGETS := recovery
 TW_USE_NEW_MINADBD := true
 TW_EXCLUDE_PYTHON := true
 TW_EXCLUDE_TWRPAPP := true
+ALLOW_MISSING_DEPENDENCIES=true
 
 # exFAT drivers included in the kernel
 TW_NO_EXFAT_FUSE := true
